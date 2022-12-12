@@ -492,6 +492,12 @@ textarea {
   height: 100%;
   background-color: #ffffff;
   opacity: 1;
+  -webkit-transform: translate(-50% -50%) scale(1);
+          transform: translate(-50% -50%) scale(1);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__button__close {
@@ -564,13 +570,6 @@ textarea {
   gap: 15px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.modal__soc__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  bottom: 0px;
 }
 
 .first__page__modal {

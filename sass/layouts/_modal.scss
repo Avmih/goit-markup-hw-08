@@ -36,6 +36,10 @@ height: 40px;
     height: 100%;
     background-color: #ffffff;
     opacity: 1;
+
+    transform: translate(-50% -50%) scale(1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__button__close {
@@ -106,10 +110,6 @@ display: flex;
 gap: 15px;
 margin-left: auto;
 margin-right: auto;
-}
-.modal__soc__item {
-    display: flex;
-      bottom: 0px;
 }
 
 
