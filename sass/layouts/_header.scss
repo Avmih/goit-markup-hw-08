@@ -1,0 +1,137 @@
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.page__header {
+    display: flex;
+    border-bottom: 1px solid var(--gray_1);
+    
+}
+
+
+.header__nav {
+    list-style: none;
+    /*геометрия*/
+    display: flex;
+    width: 281px;
+    gap: 50px;
+    display: none;
+}
+
+.header__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3333;
+    letter-spacing: 0.02em;
+    color: var(--black_1);
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-property: color;
+
+    padding-bottom: 32px;
+    padding-top: 32px;
+
+    &:hover,
+        &:focus {
+            color: var(--brand-color);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}
+
+
+.header__nav .header__link {
+    display: block;
+    position: relative;
+
+    &.header__link__current::after {
+            content:"";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            bottom: -1px;
+            left: 0;
+            background-color: var(--brand-color);
+        }
+}
+
+.header__link__current {
+    color: var(--brand-color);
+}
+
+.header__contacts    {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    display: none;
+
+}
+
+.header__link__mail {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.02em;
+    color: var(--gray);
+    text-decoration: none;
+    align-items: center;
+    gap: 10px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+     &:hover,
+        &:focus {
+            color: var(--brand-color);
+        }
+
+            &:hover,
+                &:focus, .header__icon__mail {
+                    fill: currentColor;
+                }
+}
+
+
+.header__icon__mail {
+    width: 16px;
+    height: 12px;
+    fill: var(--icon_header);
+}
+
+.header__icon__tel {
+    width: 10px;
+    height: 16px;
+    fill: var(--icon_header);
+}
+
+.header__link__tel {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--gray);
+    align-items: center;
+    gap: 10px;
+    transition-duration: 250ms;
+
+    /*геометрия*/
+    margin-right: 15px;
+    margin-left: 50px;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+        &:focus {
+            color: var(--brand-color);
+        }
+    
+     &:hover,
+        &:focus,
+        .header__icon__tel {
+            fill: currentColor;
+        }
+}

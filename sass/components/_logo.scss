@@ -1,0 +1,24 @@
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    /*геометрия*/
+    display: inline-block;
+    margin-left: 15px;
+    width: 145px;
+    height: 31px;
+    margin-right: 93px;
+    padding-bottom: 25px;
+}
+
+.web {
+    color: var(--brand-color);
+}
+
+.studio {
+    color: var(--black);
+}

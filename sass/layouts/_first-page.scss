@@ -1,0 +1,40 @@
+.first__page {
+    text-align: center;
+    padding-bottom: 118px;
+    padding-top: 118px;
+
+        background: #2f303a;
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../img/photo_page_1/bg-img.jpg);
+            background-repeat: no-repeat;
+            max-width: 1600px;
+            min-width: 320px;
+
+}
+
+
+
+.first__page--button{   
+    display: inline;
+    align-items: center;
+    min-width: 216px;
+    padding-top: 10px;
+    padding-bottom: 10px;}
+
+.first__page__title {
+
+  font-weight: 900;
+font-size: 26px;
+line-height: calc(42/26);
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+    color: var(--white);
+    text-align: center;
+    justify-content: center;
+
+    /*геометрия*/
+    display: block;
+    margin-bottom: 30px;
+}

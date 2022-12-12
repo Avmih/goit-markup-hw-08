@@ -1,0 +1,17 @@
+:root {
+    --brand-color: #2196f3;
+    --black: #000000;
+    --black_1: #212121;
+    --gray: #757575;
+    --white: #ffffff;
+    --black_gray: #2f303a;
+    --gray_1: #f5f4fa;
+    --icon_color: rgba(175, 177, 184, 1);
+    --icon_header: rgba(117, 117, 117, 1);
+    --icon_futter: #44454e;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--white);
+    /*border-color: #2196f3;*/
+}
