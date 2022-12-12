@@ -461,12 +461,12 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 5px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  min-width: 528px;
-  min-height: 581px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  width: 320px;
+  height: 600px;
   background-color: #ffffff;
   opacity: 1;
   -webkit-transform: translate(-50% -50%) scale(1);
@@ -528,8 +528,8 @@ textarea {
 
 .modal__title {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.52;
+  font-size: 18px;
+  line-height: 1.6666666667;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black);
@@ -544,12 +544,12 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 448px;
-  height: 342px;
+  width: 295px;
+  height: 340px;
 }
 
 .modal__list input {
-  padding-left: 42px;
+  padding-left: 30px;
 }
 
 .modal__list {
@@ -575,7 +575,7 @@ textarea {
 
 .modal__list__input {
   height: 40px;
-  width: 448px;
+  width: 290px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-transition-property: outline;
@@ -616,7 +616,7 @@ textarea {
 
 .modal__textarea {
   height: 122px;
-  width: 448px;
+  width: 290px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
@@ -680,10 +680,10 @@ textarea {
   display: flex;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
   color: #757575;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .modal__checkbox {
@@ -691,7 +691,7 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
-  min-width: 423px;
+  width: 290px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -708,10 +708,12 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 10px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--gray);
+  text-align: start;
+  width: 290px;
 }
 
 .modal__checkbox__label span {
@@ -748,13 +750,13 @@ textarea {
 
 .modal__checkbox__link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 10px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196F3;
-  margin-left: 5px;
+  text-align: justify;
 }
 
 .modal__checkbox__buttom {
