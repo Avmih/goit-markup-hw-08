@@ -1461,8 +1461,8 @@ textarea {
 }
 
 .portfolio__menu {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .buttom__list {
@@ -1471,7 +1471,7 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1547,7 +1547,7 @@ textarea {
 .picture__img {
   position: relative;
   overflow: hidden;
-  min-width: 290px;
+  width: 290px;
 }
 
 .picture__text {
