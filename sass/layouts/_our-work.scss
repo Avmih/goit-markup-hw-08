@@ -1,7 +1,14 @@
 .work {
+    display: none;
+
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--gray_1);
+
+    @media screen and (min-widht:769px){
+        display: block;
+        
+    }
 }
 
 .work__title {
@@ -21,7 +28,13 @@ letter-spacing: 0.03em;
 .work__foto {
     position: relative;
     margin-bottom: 10px;
+
 }
+
+.work__photo{
+    width: 100%;
+}
+
 
 .work__foto__description {
     position: absolute;

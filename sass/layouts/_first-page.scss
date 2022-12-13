@@ -1,17 +1,22 @@
 .first__page {
+    display: block;
     text-align: center;
     padding-bottom: 118px;
     padding-top: 118px;
+    background: #2f303a;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/photo_page_1/bg-img.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
 
-        background: #2f303a;
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-                url(../img/photo_page_1/bg-img.jpg);
-            background-repeat: no-repeat;
-            max-width: 1600px;
-            min-width: 320px;
+  @include mobile{
+    max-width: 480px;
+  }
 
-}
+  @include tablet{
+    max-width: 769px;
+  }
+        }
+
 
 
 
@@ -24,7 +29,7 @@
 
 .first__page__title {
 
-  font-weight: 900;
+font-weight: 900;
 font-size: 26px;
 line-height: calc(42/26);
 text-align: center;
@@ -37,4 +42,8 @@ text-transform: uppercase;
     /*геометрия*/
     display: block;
     margin-bottom: 30px;
+
+
 }
+
+
