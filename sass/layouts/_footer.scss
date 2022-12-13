@@ -5,6 +5,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    @include mobile{
+        max-width: 460px;
+    }
 }
 
 .footer__container {
@@ -28,6 +32,7 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 .footer__list {
@@ -94,6 +99,7 @@
 /*footer_social*/
 
 .footer__soc {
+    display: block;
     width: 206px;
     height: 80px;
    margin-left: auto;

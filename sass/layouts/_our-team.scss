@@ -2,6 +2,10 @@
     padding-bottom: 60px;
     padding-top: 60px;
     background-color: var(--gray_1);
+
+    @include mobile{
+        max-width: 460px;
+    }
 }
 
 .our__team__title {
@@ -23,7 +27,8 @@
     padding-left: 0px;
     padding-right: 0;
     margin-right: 0;
-  
+
+
 }
 
 

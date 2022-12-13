@@ -1,6 +1,10 @@
 .clients {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @include mobile{
+        max-width: 460px;
+    }
 }
 
 .clients__title {
@@ -22,7 +26,7 @@ margin-bottom: 50px;
 }
 
 .clients__item {
-    width: 210px;
+    width: 200px;
     height: 92px;
 }
 

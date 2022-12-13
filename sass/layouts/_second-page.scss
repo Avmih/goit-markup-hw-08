@@ -4,31 +4,48 @@
 
 .second__page {
     padding-top: 60px;
-}
+
+    @include mobile{
+        max-width: 460px;
+    }
+
+ }
+
 
 .second__page__description {
+    display: block;
     font-size: 14px;
     line-height: 1.7142;
     letter-spacing: 0.03em;
     color: var(--gray);
-    min-width: 270px;
+    width: 100%;
     text-align: center;
     margin-left: 2px;
     margin-right: 2px;
 
     /*геометрия*/
     margin-top: 10px;
+
+      @include mobile{
+        text-align: left;
+       
+    }
 }
 
 .second__page__title {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+
+@include mobile{
+    max-width: 460px;
+}
 }
 
 .second__page__list {
     margin-bottom: 30px;
-    
+
+
     &:last-child {
             margin-right: 0;
         }
