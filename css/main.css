@@ -1529,6 +1529,7 @@ textarea {
    width: calc((100% - 60px) / 3);
 }*/
 .picture__link {
+  width: 100%;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -1547,7 +1548,7 @@ textarea {
 .picture__img {
   position: relative;
   overflow: hidden;
-  width: 290px;
+  width: 100%;
 }
 
 .picture__text {
