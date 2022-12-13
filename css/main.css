@@ -541,6 +541,7 @@ textarea {
   color: var(--brand-color);
   margin-bottom: 32px;
   display: block;
+  width: 300px;
 }
 .header__modal__tel:hover, .header__modal__tel:focus {
   color: var(--black);
