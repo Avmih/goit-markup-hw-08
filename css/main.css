@@ -29,7 +29,6 @@
   height: 28px;
   margin-top: 16px;
   margin-bottom: 16px;
-  margin-right: auto;
   padding-bottom: 25px;
 }
 
@@ -135,11 +134,19 @@ textarea {
   gap: 50px;
   display: none;
 }
+@media screen and (min-width: 769px) {
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 87px;
+  }
+}
 
 .header__link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.3333;
+  line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: var(--black_1);
   text-decoration: none;
@@ -183,21 +190,32 @@ textarea {
   margin-left: auto;
   display: none;
 }
+@media screen and (min-width: 769px) {
+  .header__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 96px;
+  }
+}
 
 .header__link__mail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: var(--gray);
   text-decoration: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 5px;
+  margin-bottom: 10px;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -227,20 +245,18 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--gray);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 5px;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   /*геометрия*/
-  margin-right: 15px;
-  margin-left: 50px;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -269,6 +285,11 @@ textarea {
 @media screen and (min-width: 480px) {
   .page__footer {
     max-width: 460px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .page__footer {
+    max-width: 769px;
   }
 }
 
@@ -480,6 +501,12 @@ textarea {
   position: relative;
 }
 
+@media screen and (min-width: 769px) {
+  .modal__header {
+    display: none;
+  }
+}
+
 .header__modal__button {
   position: absolute;
   width: 40px;
@@ -529,6 +556,11 @@ textarea {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 480px) {
+  .header__modal {
+    padding: 48px 40px;
+  }
+}
 
 .header__button__close {
   position: absolute;
@@ -557,7 +589,7 @@ textarea {
   font-size: 35px;
   line-height: 1.2857142857;
   letter-spacing: 0.02em;
-  margin-bottom: 300px;
+  margin-bottom: 302px;
   color: var(--black);
 }
 
@@ -631,6 +663,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+/*модалка перша сторінка*/
 .first__page__modal {
   position: absolute;
   top: 50%;
@@ -643,7 +676,7 @@ textarea {
   padding-top: 30px;
   padding-bottom: 15px;
   width: 100%;
-  height: 100%;
+  height: 609px;
   background-color: #ffffff;
   opacity: 1;
   -webkit-transform: translate(-50% -50%) scale(1);
@@ -654,7 +687,7 @@ textarea {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-widht: 479px) {
+@media screen and (min-width: 480px) {
   .first__page__modal {
     padding-left: 40px;
     padding-right: 40px;
@@ -723,7 +756,12 @@ textarea {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black);
-  margin-bottom: 12px;
+}
+@media screen and (min-width: 480px) {
+  .modal__title {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .modal__contacts {
@@ -734,12 +772,23 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 295px;
+  min-width: 100%;
   height: 340px;
+}
+@media screen and (min-width: 480px) {
+  .modal__contacts {
+    width: 370px;
+    height: 274px;
+  }
 }
 
 .modal__list input {
   padding-left: 30px;
+}
+@media screen and (min-width: 480px) {
+  .modal__list input {
+    padding-left: 35px;
+  }
 }
 
 .modal__list {
@@ -754,7 +803,7 @@ textarea {
   height: 18px;
   left: 0;
   top: 50%;
-  margin-left: 12px;
+  margin-left: 10px;
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
@@ -765,7 +814,7 @@ textarea {
 
 .modal__list__input {
   height: 40px;
-  width: 290px;
+  width: 100%;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-transition-property: outline;
@@ -799,6 +848,17 @@ textarea {
 .modal__list__input:not(:focus):not(:placeholder-shown):invalid {
   background-color: rgba(255, 0, 0, 0.183);
 }
+@media screen and (min-width: 480px) {
+  .modal__list__input {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal__comment {
+    height: 120px;
+  }
+}
 
 .modal__comment textarea {
   padding: 16px 14px;
@@ -806,12 +866,17 @@ textarea {
 
 .modal__textarea {
   height: 122px;
-  width: 290px;
+  width: 100%;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 .modal__textarea:focus {
   outline: 1px solid var(--brand-color);
+}
+@media screen and (min-width: 480px) {
+  .modal__textarea {
+    width: 370px;
+  }
 }
 
 .modal__form::-webkit-input-placeholder {
@@ -877,17 +942,21 @@ textarea {
 }
 
 .modal__checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   margin-top: 20px;
-  width: 290px;
+  min-width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .modal__checkbox {
+    margin-top: 90px;
+    min-width: 370px;
+  }
 }
 
 .modal__checkbox__label {
@@ -897,13 +966,19 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--gray);
-  text-align: start;
-  width: 290px;
+}
+@media screen and (max-width: 320px) {
+  .modal__checkbox__label {
+    font-size: 1px;
+  }
 }
 
 .modal__checkbox__label span {
@@ -968,7 +1043,7 @@ textarea {
   width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 30px;
+  margin-top: 33px;
 }
 
 .work {
@@ -977,9 +1052,14 @@ textarea {
   padding-bottom: 60px;
   background-color: var(--gray_1);
 }
-@media screen and (min-widht: 769px) {
+@media screen and (min-width: 480px) {
   .work {
-    display: block;
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .work {
+    display: none;
   }
 }
 
@@ -1030,7 +1110,12 @@ textarea {
 }
 @media screen and (min-width: 480px) {
   .clients {
-    max-width: 460px;
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .clients {
+    max-width: 769px;
   }
 }
 
@@ -1058,7 +1143,7 @@ textarea {
 }
 
 .clients__item {
-  width: 200px;
+  width: 210px;
   height: 92px;
 }
 
@@ -1123,6 +1208,11 @@ textarea {
 @media screen and (min-width: 480px) {
   .page__footer {
     max-width: 460px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .page__footer {
+    max-width: 769px;
   }
 }
 
@@ -1337,7 +1427,12 @@ textarea {
 }
 @media screen and (min-width: 480px) {
   .our__team {
-    max-width: 460px;
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .our__team {
+    max-width: 769px;
   }
 }
 
@@ -1351,6 +1446,19 @@ textarea {
   margin-bottom: 30px;
 }
 
+.our__team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  right: 50%;
+}
+
 .our__team__foto {
   /*width: calc((100% - 90px) / 3);*/
   width: 100%;
@@ -1359,12 +1467,19 @@ textarea {
   padding-right: 0;
   margin-right: 0;
 }
+@media screen and (min-width: 769px) {
+  .our__team__foto {
+    width: 354px;
+  }
+}
 
 /*векторна графіка*/
 .our__soc__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1490,7 +1605,18 @@ textarea {
 }
 @media screen and (min-width: 480px) {
   .second__page {
-    max-width: 460px;
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .second__page {
+    max-width: 769px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .second__page__text {
+    text-align: left;
   }
 }
 
@@ -1526,9 +1652,24 @@ textarea {
     max-width: 460px;
   }
 }
+@media screen and (min-width: 769px) {
+  .second__page__title {
+    max-width: 769px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 50px;
+    gap: 30px;
+  }
+}
 
 .second__page__list {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 769px) {
+  .second__page__list {
+    width: 354px;
+  }
 }
 .second__page__list:last-child {
   margin-right: 0;
@@ -1549,6 +1690,12 @@ textarea {
           justify-content: center;
   margin-bottom: 30px;
   border-radius: 4px;
+}
+@media screen and (min-width: 769px) {
+  .second__page__icons {
+    width: 354px;
+    height: 120px;
+  }
 }
 
 .second__page__icon {

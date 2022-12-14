@@ -4,11 +4,12 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--gray_1);
-
-    @media screen and (min-widht:769px){
-        display: block;
-        
-    }
+      @include mobile{
+           display: none;
+     }
+     @include tablet{
+        display: none;
+     }
 }
 
 .work__title {

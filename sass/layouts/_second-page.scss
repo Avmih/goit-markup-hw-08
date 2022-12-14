@@ -6,9 +6,19 @@
     padding-top: 60px;
 
     @include mobile{
-        max-width: 460px;
+        max-width: 480px;
     }
 
+    @include tablet{
+        max-width: 769px;
+    }
+
+ }
+
+ .second__page__text{
+    @include tablet{
+        text-align: left;
+    }
  }
 
 
@@ -40,10 +50,24 @@
 @include mobile{
     max-width: 460px;
 }
+
+@include tablet{
+max-width: 769px;
+display: flex;
+left: 50px;
+gap: 30px;
+
+
+    }
+
 }
 
 .second__page__list {
     margin-bottom: 30px;
+
+    @include tablet{
+     width: 354px;
+    }
 
 
     &:last-child {
@@ -60,6 +84,11 @@
     justify-content: center;
     margin-bottom: 30px;
     border-radius: 4px;
+
+    @include tablet{
+        width: 354px;
+        height: 120px;
+    }
 }
 
 .second__page__icon {

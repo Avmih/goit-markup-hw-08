@@ -9,6 +9,10 @@
     @include mobile{
         max-width: 460px;
     }
+
+    @include tablet{
+        max-width: 769px;
+    }
 }
 
 .footer__container {

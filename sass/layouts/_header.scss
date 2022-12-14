@@ -1,6 +1,8 @@
 .header__container {
     display: flex;
     align-items: center;
+
+
 }
 
 .page__header {
@@ -17,18 +19,22 @@
     width: 281px;
     gap: 50px;
     display: none;
+
+    @include tablet{
+        display: flex;
+        margin-left: 87px;
+    }
 }
 
 .header__link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.3333;
+    line-height: calc(16/14);
     letter-spacing: 0.02em;
     color: var(--black_1);
     text-decoration: none;
     transition-duration: 250ms;
     transition-property: color;
-
     padding-bottom: 32px;
     padding-top: 32px;
 
@@ -66,18 +72,25 @@
     margin-left: auto;
     display: none;
 
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 96px;
+    }
+
 }
 
 .header__link__mail {
     display: flex;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1428;
+    font-size: 12px;
+    line-height: calc(14/12);
     letter-spacing: 0.02em;
     color: var(--gray);
     text-decoration: none;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+    margin-bottom: 10px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -109,18 +122,17 @@
 .header__link__tel {
     display: flex;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1428;
+    font-size: 12px;
+    line-height: calc(14/12);
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--gray);
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     transition-duration: 250ms;
 
     /*геометрия*/
-    margin-right: 15px;
-    margin-left: 50px;
+
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 

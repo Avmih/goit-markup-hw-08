@@ -4,7 +4,11 @@
     background-color: var(--gray_1);
 
     @include mobile{
-        max-width: 460px;
+        max-width: 480px;
+    }
+
+    @include tablet{
+        max-width: 769px;
     }
 }
 
@@ -20,6 +24,14 @@
     
 }
 
+.our__team__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    right: 50%;
+}
+
 .our__team__foto {
     /*width: calc((100% - 90px) / 3);*/
     width: 100%;
@@ -27,6 +39,10 @@
     padding-left: 0px;
     padding-right: 0;
     margin-right: 0;
+
+    @include tablet{
+        width:354px;
+    }
 
 
 }
@@ -37,9 +53,12 @@
 
 .our__soc__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 16px;
     gap: 10px;
+    
+
 }
 
 .our__soc__item {
