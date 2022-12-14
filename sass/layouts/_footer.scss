@@ -13,6 +13,11 @@
     @include tablet{
         max-width: 769px;
     }
+
+    @include desctop{
+        min-width: 1200px;
+        max-width: 1600px;
+    }
 }
 
 .footer__container {

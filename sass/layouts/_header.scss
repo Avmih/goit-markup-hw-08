@@ -24,6 +24,10 @@
         display: flex;
         margin-left: 87px;
     }
+
+    @include desctop{
+        display: flex;
+    }
 }
 
 .header__link {
@@ -68,14 +72,19 @@
 
 .header__contacts    {
     list-style: none;
-    display: flex;
-    margin-left: auto;
     display: none;
+    margin-left: auto;
 
     @include tablet{
         display: flex;
         flex-wrap: wrap;
         margin-left: 96px;
+    }
+    @include desctop{
+        display: flex;
+        margin-left: auto;
+        justify-content: center;
+        align-items: center;
     }
 
 }
@@ -103,6 +112,13 @@
             &:hover,
                 &:focus, .header__icon__mail {
                     fill: currentColor;
+                }
+
+                @include desctop{
+                    gap: 10px;
+                    margin-bottom: 0;
+                    font-size: 14px;
+                    line-height: calc(16/14);
                 }
 }
 
@@ -136,6 +152,7 @@
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+
     &:hover,
         &:focus {
             color: var(--brand-color);
@@ -145,5 +162,13 @@
         &:focus,
         .header__icon__tel {
             fill: currentColor;
+        }
+
+        @include desctop{
+            gap: 10px;
+            margin-right: 15px;
+            margin-left: 50px;
+            font-size: 14px;
+            line-height: calc(16/14);
         }
 }

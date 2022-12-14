@@ -12,12 +12,22 @@
     @include tablet{
         max-width: 769px;
     }
+    @include desctop{
+        min-width: 1200px;
+        max-width: 1600px;
+        padding-top: 94px;
+    
+    }
 
  }
 
  .second__page__text{
     @include tablet{
         text-align: left;
+    }
+
+    @include desctop{
+        text-align: inherit;
     }
  }
 
@@ -52,27 +62,41 @@
 }
 
 @include tablet{
-max-width: 769px;
-display: flex;
-left: 50px;
-gap: 30px;
+    max-width: 769px;
+    display: flex;
+    left: 50%;
+    gap: 30px;
+}
+
+@include desctop{
+flex-wrap: nowrap;
+width: 1170px;
+text-align: inherit;
+}
 
 
-    }
+
+
+
 
 }
 
 .second__page__list {
     margin-bottom: 30px;
+       &:last-child {
+            margin-right: 0;
+        }
 
-    @include tablet{
+        @include tablet{
      width: 354px;
     }
 
+    @include desctop{
+        width: 270px;
+        height: 248px;
 
-    &:last-child {
-            margin-right: 0;
-        }
+    }
+    
 }
 
 .second__page__icons {
@@ -89,6 +113,11 @@ gap: 30px;
         width: 354px;
         height: 120px;
     }
+    @include desctop{
+        width: 270px;
+    }
+
+ 
 }
 
 .second__page__icon {

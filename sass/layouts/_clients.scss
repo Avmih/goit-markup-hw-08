@@ -9,6 +9,11 @@
     @include tablet{
         max-width: 769px;
     }
+
+    @include desctop{
+        min-width: 1200px;
+        max-width: 1600px;
+    }
 }
 
 .clients__title {
@@ -32,7 +37,14 @@ margin-bottom: 50px;
 .clients__item {
     width: 210px;
     height: 92px;
+    
+    @include desctop{
+    width: 170px;
+    height: 92px;
 }
+}
+
+
 
 .clients__link {
     display: flex;
