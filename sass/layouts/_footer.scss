@@ -25,13 +25,59 @@
 .footer__container {
     align-items: baseline;
 
+    @include desctop{
+        display: flex;
+    }
+    
+
+}
+
+    
+
+
+@include tablet{
+
+.footer__info{
+    display: flex;
+    gap: 165px;
+    align-items: center;
+    margin-bottom: 60px;
+ }
+
+}
+
+.footer__info{
+@include desctop{
+    margin-bottom: 0;
+    text-align: left;
+    gap: 70px;
+}
+}
+
+.footer__con_add{
+display: block;
+margin-bottom: 60px;
+     
+     @include tablet{
+  margin-left: 76px;
+  margin-bottom: 0;
+ 
+}
+
+@include desctop{
+    margin-bottom: 0;
+}
 }
 
 .footer__logo {
     display: block;
     margin-bottom: 20px;
-     margin-left: auto;
+    margin-right: 20px;
+    align-items: center;
+    margin-left: auto;
     margin-right: auto;
+
+
 
 }
 
@@ -40,8 +86,6 @@
 }
 
 .footer__nav{
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 60px;
   margin-top: 60px;
 }
@@ -63,10 +107,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+
     &:hover,
         &:focus {
             color: var(--brand-color);
         }
+
+    
 }
 
 
@@ -113,9 +160,16 @@
     display: block;
     width: 206px;
     height: 80px;
-   margin-left: auto;
-   margin-right: auto;
-   margin-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+
+    
+
+   @include tablet{
+    align-items: baseline;
+    margin-bottom: 0;
+   }
 }
 
 .footer__soc__title {
@@ -166,6 +220,10 @@
 
 
 
+.footer__form{
+    display: flex;
+}
+
 
 
 .footer__form__text {
@@ -180,13 +238,25 @@
 
 .form__footer__style {
     align-items: center;
+    
+    @include tablet{
+        justify-content: center;
+        align-items: center;
+
+    }
 }
 
 .form__footer__style input {
     padding-left: 16px;
     padding-bottom: 15px;
     padding-top: 15px;
+
+    @include tablet{
+    margin-bottom: 20px;
+    display: flex; 
 }
+}
+
 
 
 .footer__input {
@@ -201,6 +271,11 @@
     &:focus {
             outline: 1px solid var(--brand-color);
         }
+
+    @include tablet{
+        width: 450px;
+        margin: auto;
+    }
 }
 
 .footer--button {
