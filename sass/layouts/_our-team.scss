@@ -2,20 +2,20 @@
     padding-bottom: 60px;
     padding-top: 60px;
     background-color: var(--gray_1);
+    margin: auto;
 
     @include mobile{
-        min-width: 480px;
-        max-width: 769px;
+    max-width: 480px;
+       
     }
 
     @include tablet{
-        min-width: 769px;
-        max-width: 1200px;
+    max-width: 769px;
+   
     }
 
     @include desctop{
-    min-width: 1200px;
-    max-width: 1600px;
+    max-width: 1200px;
     padding-bottom: 94px;
     padding-top: 94px;
     }

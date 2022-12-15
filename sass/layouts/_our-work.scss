@@ -1,6 +1,7 @@
 .work {
     padding-top: 94px;
     padding-bottom: 94px;
+    margin: auto;
 
     @include mobile{
         display: none;
@@ -10,8 +11,8 @@
      }
 
      @include desctop{
-        min-width: 1200px;
-        max-width: 1600px;
+       max-width: 1200px;
+      
         display: flex;
      }
 }

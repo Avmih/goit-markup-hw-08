@@ -4,19 +4,18 @@
 
 .second__page {
     padding-top: 60px;
+    margin: auto;
 
     @include mobile{
-        mix-width: 480px;
-        max-width: 769px;
+        max-width: 480px;
     }
 
     @include tablet{
-        minx-width: 769px;
-        max-width: 1200px;
+       max-width: 769px;
+       
     }
     @include desctop{
-        min-width: 1200px;
-        max-width: 1600px;
+      max-width: 1200px;
         padding-top: 94px;
     
     }
