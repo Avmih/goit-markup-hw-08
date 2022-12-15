@@ -25,6 +25,7 @@
 .footer__container {
     align-items: baseline;
 
+
     @include desctop{
         display: flex;
     }
