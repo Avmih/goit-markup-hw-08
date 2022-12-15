@@ -221,7 +221,9 @@ margin-bottom: 60px;
 
 
 .footer__form{
+    @include desctop{
     display: flex;
+    }
 }
 
 
@@ -275,6 +277,10 @@ margin-bottom: 60px;
     @include tablet{
         width: 450px;
         margin: auto;
+    }
+
+    @include desctop{
+        width: 358px;
     }
 }
 

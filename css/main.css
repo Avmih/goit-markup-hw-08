@@ -537,10 +537,12 @@ textarea {
   fill: var(--white);
 }
 
-.footer__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer__form__text {
@@ -599,6 +601,11 @@ textarea {
   .footer__input {
     width: 450px;
     margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
   }
 }
 
@@ -1579,10 +1586,12 @@ textarea {
   fill: var(--white);
 }
 
-.footer__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer__form__text {
@@ -1641,6 +1650,11 @@ textarea {
   .footer__input {
     width: 450px;
     margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
   }
 }
 
