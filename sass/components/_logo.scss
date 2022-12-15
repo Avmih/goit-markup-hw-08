@@ -14,6 +14,19 @@
     margin-top: 16px;
     margin-bottom: 16px;
     padding-bottom: 25px;
+
+    @media screen and (min-width:1200px) {
+        
+    font-size: 26px;
+    line-height: calc(31/26);
+    display: inline-block;
+    margin-left: 15px;
+    width: 145px;
+    height: 31px;
+    margin-right: 93px;
+    padding-bottom: 25px;
+
+    }
 }
 
 
