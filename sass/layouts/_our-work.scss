@@ -2,13 +2,9 @@
     padding-top: 94px;
     padding-bottom: 94px;
     margin: auto;
+    display: none;
 
-    @include mobile{
-        display: none;
-     }
-     @include tablet{
-        display: none;
-     }
+
 
      @include desctop{
        max-width: 1200px;
@@ -43,7 +39,7 @@
 
 .work__foto {
     position: relative;
-    width: 370px;
+    
 }
 
 .work__foto__description {
@@ -62,4 +58,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white);
+}
+
+.work__photo{
+    width: 350px;
+    height: 295px;
 }
