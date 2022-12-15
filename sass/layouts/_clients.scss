@@ -3,11 +3,13 @@
     padding-bottom: 60px;
 
     @include mobile{
-        max-width: 480px;
+        min-width: 480px;
+        max-width: 769px;
     }
 
     @include tablet{
-        max-width: 769px;
+        min-width: 769px;
+        max-width: 1200px;
     }
 
     @include desctop{

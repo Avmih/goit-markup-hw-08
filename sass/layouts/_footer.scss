@@ -7,11 +7,13 @@
     text-align: center;
 
     @include mobile{
-        max-width: 460px;
+        min-width: 460px;
+        max-width: 769px;
     }
 
     @include tablet{
-        max-width: 769px;
+        min-width: 769px;
+        max-width: 1200px;
     }
 
     @include desctop{

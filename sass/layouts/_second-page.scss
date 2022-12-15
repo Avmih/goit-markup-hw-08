@@ -6,11 +6,13 @@
     padding-top: 60px;
 
     @include mobile{
-        max-width: 480px;
+        mix-width: 480px;
+        max-width: 769px;
     }
 
     @include tablet{
-        max-width: 769px;
+        minx-width: 769px;
+        max-width: 1200px;
     }
     @include desctop{
         min-width: 1200px;
