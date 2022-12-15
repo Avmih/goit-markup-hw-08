@@ -1,7 +1,7 @@
 .work {
     padding-top: 94px;
     padding-bottom: 94px;
-    margin: auto;
+
     display: none;
 
 
@@ -10,6 +10,7 @@
        max-width: 1200px;
       
         display: flex;
+         margin: auto;
      }
 }
 
@@ -61,6 +62,6 @@
 }
 
 .work__photo{
-    width: 350px;
+    width: 370px;
     height: 295px;
 }

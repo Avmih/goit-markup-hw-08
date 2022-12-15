@@ -42,6 +42,10 @@ textarea {
     resize: none;
 }
 
+.no-scroll{
+overflow:hidden;
+}
+
 .container {
     /*геометррия*/
     width: 100%;
