@@ -1,27 +1,46 @@
 .portfolio__menu {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 60x;
+
+    @include desctop{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+
+    @media screen and (max-width:320px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
 }
 
 .buttom__list {
     /*геометрия*/
 
     display: flex;
+    justify-content: left;
     gap: 15px;
-    margin-bottom: 30px;
     flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    @include desctop{
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 0;
+    }
+
+
 }
 
 .button__item {
     font-weight: 500;
     font-size: 16px;
     font-family: inherit;
-    line-height: calc(26/16);
+    line-height: 1.625;
     text-align: center;
     letter-spacing: 0.03em;
     border: none;
     background-color: var(--gray_1);
-    color: var(--black_1);
 
     /*геометрия*/
     margin-left: 8px;
@@ -55,7 +74,6 @@
 .button__section {
     border: none;
     background-color: var(--white);
-
 }
 
 
@@ -64,7 +82,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
- 
+
+    @include tablet{
+        left: 50%;
+        margin: auto;
+    }
 }
 
 /*.pic_item {
@@ -72,7 +94,6 @@
 }*/
 
 .picture__link {
-    width: 100%;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -82,7 +103,10 @@
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
             1px 4px 6px rgba(0, 0, 0, 0.16);
         }
+        
+        @include tablet{
 
+        }
 
 }
 
@@ -90,9 +114,6 @@
 .picture__img {
     position: relative;
     overflow: hidden;
-    width: 100%;
-   
-    
 }
 
 .picture__text {
@@ -113,25 +134,32 @@
             transform: translateY(0);
         }
 
+
+
 }
 
 
 .text {
     font-weight: 400;
-    font-size: 16px;
-    line-height: calc(25/16);
+    font-size: 18px;
+    line-height: 1.555;
     letter-spacing: 0.03em;
     color: var(--white);
-    width: 100%;
-    height: 100vw;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 63px 24px;
     background-color: var(--brand-color);
     opacity: 0.9;
+
+
+    @media screen and (max-width:320px) {
+    font-size: 14px;
+    line-height: calc(25/14);
+    padding: 44px 24px;
+        
+    }
+    @include mobile{
+    padding: 77px 24px;
+    line-height: calc(28/18);
+    }
 }
 
 
@@ -143,8 +171,8 @@
 }
 
 .picture__description {
-    font-size: 14px;
-    line-height: calc(36/14);
+    font-size: 18px;
+    line-height: 1.9444;
     letter-spacing: 0.06em;
     color: var(--black_1);
     margin-bottom: 4px;
@@ -153,7 +181,7 @@
 
 .picture__undertext {
     font-size: 16px;
-    line-height: calc(30/16);
+    line-height: 1.875;
     letter-spacing: 0.03em;
     color: var(--gray);
 }
