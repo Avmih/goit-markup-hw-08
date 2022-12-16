@@ -88,15 +88,11 @@ font-weight: 500;
 font-size: 35px;
 line-height: calc(45/35);
 letter-spacing: 0.02em;
-margin-bottom: 306px;
+margin-bottom: auto;
 color: var(--black);
 }
 
-@media screen and (min-widht:479px){
-    .modal__nav__list{
-        margin-bottom: 50px;
-    }
-}
+
 
 .modal__nav__item {
     display: block;
@@ -146,10 +142,18 @@ display: flex;
 gap: 15px;
 margin-left: auto;
 margin-right: auto;
+margin-bottom: 15px;
 
 @media screen and (max-width:320px)
  {
 overflow-wrap: break-word;
+}
+
+@media screen and (max-width:320px) {
+    gap: 10px;
+    font-size: 12px;
+    line-height: calc(15/12);
+    
 }
 }
 
@@ -167,4 +171,20 @@ overflow-wrap: break-word;
     border-right-width: 2px;
     border-right-style: solid;
     border-right-color: rgba(33, 33, 33, 0.2);
+
+    @media screen and (max-width:320px) {
+     padding-right: 6px;
+    
+}
+
+}
+
+.modal__header__botton{
+
+    bottom: 0;
+    left: 40px;
+    padding: 10px;
+    position: fixed;
+    text-align: left;
+    z-index: 1;
 }

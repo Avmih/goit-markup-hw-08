@@ -1,5 +1,4 @@
 .page__footer {
-    background-color: var(--black_gray);
     padding-top: 60px;
     padding-bottom: 60px;
     justify-content: center;
@@ -21,6 +20,11 @@
         max-width: 1600px;
 
     }
+}
+
+.footer{
+    background-color: var(--black_gray);
+    max-width: 1600px;
 }
 
 .footer__container {

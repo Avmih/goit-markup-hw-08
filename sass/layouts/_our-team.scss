@@ -1,7 +1,6 @@
 .our__team {
     padding-bottom: 60px;
     padding-top: 60px;
-    background-color: var(--gray_1);
     margin: auto;
 
     @include mobile{
@@ -19,6 +18,13 @@
     padding-bottom: 94px;
     padding-top: 94px;
     }
+}
+
+.team{
+        background-color: var(--gray_1);
+        max-width: 1600px;
+        
+
 }
 
 
