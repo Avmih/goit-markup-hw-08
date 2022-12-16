@@ -4,7 +4,7 @@
     padding-bottom: 118px;
     padding-top: 118px;
     background: #2f303a;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../img/photo_page_1/hero_bg_mob.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/photo_page_1/hero_bg_mob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -14,36 +14,36 @@
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../img/photo_page_1/hero_bg_mob2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/photo_page_1/hero_bg_mob2x.jpg);
 }
 
   @include mobile{
     max-width: 480px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../img/photo_page_1/hero_bg_tab.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/photo_page_1/hero_bg_tab.jpg);
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../img/photo_page_1/hero_bg_tab2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/photo_page_1/hero_bg_tab2x.jpg);
 }
   
    }
 
 
   @include tablet{
-    max-width: 769px;
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../img/photo_page_1/hero_bg.jpg);
+    max-width: 768px;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/photo_page_1/hero_bg.jpg);
 
     @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../img/photo_page_1/hero_bg2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/photo_page_1/hero_bg2x.jpg);
 }
  }
  
   
 
   @include desctop{
-    max-width: 1200px;
+    max-width: 1600px;
     height: 600px;
     align-items: center;
     justify-content: center;}

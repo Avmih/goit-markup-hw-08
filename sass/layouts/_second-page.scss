@@ -11,7 +11,7 @@
     }
 
     @include tablet{
-       max-width: 769px;
+       max-width: 768px;
        
     }
     @include desctop{
@@ -63,7 +63,7 @@
 }
 
 @include tablet{
-    max-width: 769px;
+    max-width: 768px;
     display: flex;
     left: 50%;
     gap: 30px;

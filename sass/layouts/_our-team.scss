@@ -10,16 +10,17 @@
     }
 
     @include tablet{
-    max-width: 769px;
+    max-width: 768px;
    
     }
 
     @include desctop{
-    max-width: 1200px;
+    max-width: 1600px;
     padding-bottom: 94px;
     padding-top: 94px;
     }
 }
+
 
 .our__team__title {
   font-weight: 700;

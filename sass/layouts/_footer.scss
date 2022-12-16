@@ -8,17 +8,17 @@
     margin: auto;
 
     @include mobile{
-       max-width: 460px;
+       max-width: 480px;
      
     }
 
     @include tablet{
-        max-width: 769px;
+        max-width: 768px;
        
     }
 
     @include desctop{
-        max-width: 1200px;
+        max-width: 1600px;
 
     }
 }
