@@ -280,7 +280,8 @@ line-height: calc(30/20);
     color: var(--gray);
 
     @media screen and (max-width:320px){
-        font-size: 1px;
+        font-size: 8px;
+        margin-right: 4px;
 
     }
 
@@ -288,10 +289,6 @@ line-height: calc(30/20);
         font-size: 14px;
         line-height: calc(24/14);
     }
-    
-
-    
-
 }
 
 .modal__checkbox__label span {
@@ -319,18 +316,26 @@ line-height: calc(30/20);
 
 .modal__checkbox__link {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 8px;
     line-height: calc(14/12);
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: #2196F3;
     text-align:justify;
+    margin-left: 5px;
 
 
     @include desctop{
         font-size: 14px;
         line-height: calc(24/14);
-        margin-left: 5px;
+    }
+
+    @include mobile{
+        margin-left: 4px;
+    }
+
+      @include tablet{
+        margin-left: 4px;
     }
 }
 

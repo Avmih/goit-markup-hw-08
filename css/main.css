@@ -1047,7 +1047,8 @@ textarea {
 }
 @media screen and (max-width: 320px) {
   .modal__checkbox__label {
-    font-size: 1px;
+    font-size: 8px;
+    margin-right: 4px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1091,19 +1092,29 @@ textarea {
 
 .modal__checkbox__link {
   font-weight: 400;
-  font-size: 10px;
+  font-size: 8px;
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196F3;
   text-align: justify;
+  margin-left: 5px;
 }
 @media screen and (min-width: 1200px) {
   .modal__checkbox__link {
     font-size: 14px;
     line-height: 1.7142857143;
-    margin-left: 5px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal__checkbox__link {
+    margin-left: 4px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal__checkbox__link {
+    margin-left: 4px;
   }
 }
 
